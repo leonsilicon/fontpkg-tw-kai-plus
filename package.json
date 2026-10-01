@@ -1,0 +1,16 @@
+{
+  "name": "fontpkg-tw-kai-plus",
+  "version": "1.0.0",
+  "description": "CNS 11643 TW-Kai-Plus font for plane-15 private-use characters and components, including U+F616C",
+  "type": "module",
+  "license": "OFL-1.1",
+  "style": "index.css",
+  "keywords": ["font", "ttf", "cjk", "cns11643", "private-use-area", "chinese-components"],
+  "files": ["TW-Kai-Plus-98_1.ttf", "index.css", "LICENSE", "NOTICE.md", "SOURCE.md", "scripts/verify-fonts.ts"],
+  "scripts": {
+    "verify": "bun scripts/verify-fonts.ts",
+    "prepublishOnly": "bun scripts/verify-fonts.ts"
+  },
+  "homepage": "https://www.cns11643.gov.tw/",
+  "publishConfig": {"access": "public", "registry": "https://registry.npmjs.org/"}
+}
